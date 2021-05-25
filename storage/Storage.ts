@@ -39,4 +39,4 @@ export class Storage<T extends globalThis.Storage> {
 export const local = new Storage(localStorage);
 export const session = new Storage(sessionStorage);
 export const cookie = new Storage(new CookieDriver());
-export const memory = new Storage(new MemoryDriver());
+export const memory = new Storage(MemoryDriver.create());

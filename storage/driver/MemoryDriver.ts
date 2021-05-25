@@ -1,4 +1,11 @@
 export default class MemoryDriver implements globalThis.Storage {
+  static instance: MemoryDriver | undefined;
+  static create() {
+    if (!this.instance) {
+      this.instance = new MemoryDriver();
+    }
+    return this.instance;
+  }
   [name: string]: any;
   data: Record<string, string> = {};
   length: number = 0;
