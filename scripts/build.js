@@ -1,5 +1,4 @@
 const { execSync } = require('child_process');
-const rimraf = require('rimraf');
 
 /**
  * @param {String[] | String} commands
@@ -13,9 +12,4 @@ function composeCommand(commands) {
   return commands.join(' && ');
 }
 
-rimraf('../dist', (err) => {
-  if (err) {
-    console.log(err);
-  }
-});
-execSync(composeCommand(['tsc -d']));
+execSync(composeCommand(['rimraf dist', 'rimraf storage.min.js', 'rollup -c']));

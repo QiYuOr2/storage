@@ -15,12 +15,32 @@ npm run dev
 ## 使用
 
 ```javascript
-import { local, cookie, session, memory } from '../dist/Storage.js';
+import { local, cookie, session, memory } from '../dist/index.esm';
 
+// localStorage
 local.set('key', value);
 local.get('key');
 local.remove('key');
 local.clear();
+
+// cookie
+cookie.set('key', value);
+cookie.get('key');
+cookie.remove('key');
+cookie.clear();
+
+// ...
+```
+
+或者
+
+```html
+<script src="https://cdn.jsdelivr.net/gh/xmy6364/storage/storage.min.js"></script>
+
+<script>
+  storage.local.set('key', value);
+  // ...
+</script>
 ```
 
 ## TODO

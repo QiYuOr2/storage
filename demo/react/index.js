@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import reactDom from 'react-dom';
-import { local, cookie, memory } from '../dist/Storage.js';
+import { local, cookie, memory } from '../../dist/index.esm';
 
 const App = () => {
   const [text, setText] = useState('');

@@ -2,7 +2,9 @@
   "name": "storage",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/types",
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.14.3",
@@ -14,6 +16,9 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "rimraf": "^3.0.2",
+    "rollup": "^2.50.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.30.0",
     "ts-node": "^10.0.0",
     "typescript": "^4.2.4",
     "webpack": "^5.37.1",
@@ -21,7 +26,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "scripts": {
-    "dev": "webpack serve",
+    "dev": "cd demo/react && webpack serve",
     "build": "node scripts/build.js"
   },
   "keywords": [],

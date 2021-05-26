@@ -2,14 +2,14 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const htmlWebpackPlugin = new HtmlWebpackPlugin({
-  template: path.resolve(__dirname, 'demo/index.html'),
+  template: path.resolve(__dirname, 'index.html'),
 });
 
 module.exports = {
   mode: 'development',
-  entry: path.resolve(__dirname, 'demo/index.js'),
+  entry: path.resolve(__dirname, 'index.js'),
   output: {
-    path: path.resolve(__dirname, 'demo/build'),
+    path: path.resolve(__dirname, 'build'),
     filename: 'js/[name].[hash].bundle.js',
   },
   module: {
@@ -29,7 +29,7 @@ module.exports = {
   },
 
   devServer: {
-    contentBase: path.join(__dirname, 'demo'), // html所在路径
+    contentBase: path.join(__dirname, '.'), // html所在路径
     compress: true, // 是否压缩
     port: 3000, // 端口
     hot: true, // 热部署

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo</title>
+    <script src="../../storage.min.js"></script>
+  </head>
+  <body>
+    <input type="text" id="text" />
+    <button id="set">set local</button>
+    <button id="get">get local</button>
+    <script>
+      document.getElementById('set').onclick = function () {
+        const text = document.getElementById('text').value;
+        storage.local.set('text', text);
+      };
+      document.getElementById('get').onclick = function () {
+        alert(storage.local.get('text'));
+      };
+    </script>
+  </body>
+</html>

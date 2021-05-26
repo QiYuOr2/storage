@@ -1,7 +1,4 @@
-import CookieDriver from './driver/CookieDriver';
-import MemoryDriver from './driver/MemoryDriver';
-
-export class Storage<T extends globalThis.Storage> {
+export default class Storage<T extends globalThis.Storage> {
   storage: T;
   constructor(storage: T) {
     this.storage = storage;
@@ -35,8 +32,3 @@ export class Storage<T extends globalThis.Storage> {
     this.storage.clear();
   }
 }
-
-export const local = new Storage(localStorage);
-export const session = new Storage(sessionStorage);
-export const cookie = new Storage(new CookieDriver());
-export const memory = new Storage(MemoryDriver.create());
