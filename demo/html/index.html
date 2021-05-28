@@ -8,9 +8,18 @@
     <script src="../../storage.min.js"></script>
   </head>
   <body>
-    <input type="text" id="text" />
-    <button id="set">set local</button>
-    <button id="get">get local</button>
+    <section>
+      <input type="text" id="text" />
+      <button id="set">set local</button>
+      <button id="get">get local</button>
+      <button id="clear">clear local</button>
+    </section>
+    <section>
+      <input type="text" id="indexed" />
+      <button id="indexedSet">set indexed</button>
+      <button id="indexedGet">get indexed</button>
+      <button id="indexedClear">clear indexed</button>
+    </section>
     <script>
       document.getElementById('set').onclick = function () {
         const text = document.getElementById('text').value;
@@ -18,6 +27,20 @@
       };
       document.getElementById('get').onclick = function () {
         alert(storage.local.get('text'));
+      };
+      document.getElementById('clear').onclick = function () {
+        storage.local.clear();
+      };
+
+      document.getElementById('indexedSet').onclick = function () {
+        const text = document.getElementById('indexed').value;
+        storage.indexed.set('text', text);
+      };
+      document.getElementById('indexedGet').onclick = async function () {
+        alert(await storage.indexed.get('text'));
+      };
+      document.getElementById('indexedClear').onclick = function () {
+        storage.indexed.clear();
       };
     </script>
   </body>
