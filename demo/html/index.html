@@ -32,15 +32,15 @@
         storage.local.clear();
       };
 
-      document.getElementById('indexedSet').onclick = function () {
+      document.getElementById('indexedSet').onclick = async function () {
         const text = document.getElementById('indexed').value;
-        storage.indexed.set('text', text);
+        await storage.indexed.set('text', text);
       };
       document.getElementById('indexedGet').onclick = async function () {
         alert(await storage.indexed.get('text'));
       };
-      document.getElementById('indexedClear').onclick = function () {
-        storage.indexed.clear();
+      document.getElementById('indexedClear').onclick = async function () {
+        await storage.indexed.clear();
       };
     </script>
   </body>

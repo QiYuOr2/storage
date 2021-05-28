@@ -1,6 +1,6 @@
 # 封装 Storage
 
-目前实现了 localStorage、sessionStorage、Cookie 的封装
+目前实现了 localStorage、sessionStorage、Cookie、indexedDB 的封装
 
 ## 体验 Demo
 
@@ -15,7 +15,7 @@ npm run dev
 ## 使用
 
 ```javascript
-import { local, cookie, session, memory } from '../dist/index.esm';
+import { local, cookie, session, memory, indexed } from '../dist/index.esm';
 
 // localStorage
 local.set('key', value);
@@ -30,6 +30,8 @@ cookie.remove('key');
 cookie.clear();
 
 // ...
+// indexedDB 需要异步操作
+await indexed.get('key');
 ```
 
 或者
@@ -45,4 +47,5 @@ cookie.clear();
 
 ## TODO
 
-- [ ] 封装 indexDB
+- [x] 封装 indexDB
+- [ ] Github Action 自动发布 npm

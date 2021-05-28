@@ -1,7 +1,7 @@
 {
-  "name": "storage",
+  "name": "easystorage",
   "version": "1.0.0",
-  "description": "",
+  "description": "前端存储方案的简易封装",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/types",
@@ -10,6 +10,8 @@
     "@babel/core": "^7.14.3",
     "@babel/preset-env": "^7.14.2",
     "@babel/preset-react": "^7.13.13",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
     "@types/node": "^15.6.1",
     "babel-loader": "^8.2.2",
     "html-webpack-plugin": "^5.3.1",
@@ -19,7 +21,7 @@
     "rollup": "^2.50.1",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.30.0",
-    "ts-node": "^10.0.0",
+    "semantic-release": "^17.4.3",
     "typescript": "^4.2.4",
     "webpack": "^5.37.1",
     "webpack-cli": "^4.7.0",
@@ -29,7 +31,20 @@
     "dev": "cd demo/react && webpack serve",
     "build": "node scripts/build.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xmy6364/storage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xmy6364/storage/issues"
+  },
+  "homepage": "https://github.com/xmy6364/storage#readme",
+  "keywords": [
+    "storage",
+    "indexeddb",
+    "localstorage",
+    "sessionstorage"
+  ],
+  "author": "Mengyu Xu",
+  "license": "MIT"
 }
