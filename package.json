@@ -1,5 +1,5 @@
 {
-  "name": "easystorage",
+  "name": "symstorage",
   "version": "1.0.0",
   "description": "前端存储方案的简易封装",
   "main": "dist/index.cjs.js",

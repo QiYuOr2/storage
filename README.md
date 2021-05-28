@@ -9,7 +9,7 @@ npm i easystorage
 ```
 
 ```javascript
-import { local, cookie, session, memory, indexed } from 'easystorage';
+import { local, cookie, session, memory, indexed } from 'symstorage';
 
 // localStorage
 local.set('key', value);
