@@ -1,3 +1,9 @@
+/**
+ * IndexedDBDriver.ts indexedDB驱动
+ * @description 使其支持对indexedDB的操作
+ */
+
+
 import { AsyncStorage } from '../Storage';
 
 const DB_NAME = 'xmy6364_storage_db';

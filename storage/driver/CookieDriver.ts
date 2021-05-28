@@ -1,3 +1,8 @@
+/**
+ * CookieDriver.ts cookie驱动
+ * @description 使其支持对cookie的操作
+ */
+
 export default class CookieDriver implements globalThis.Storage {
   [name: string]: any;
 

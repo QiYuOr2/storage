@@ -1,3 +1,8 @@
+/**
+ * MemoryDriver.ts 缓存驱动
+ * @description 维护一个公共的变量
+ */
+
 export default class MemoryDriver implements globalThis.Storage {
   static instance: MemoryDriver | undefined;
   static create() {
