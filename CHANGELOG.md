@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/xmy6364/storage/compare/v1.0.0...v1.0.1) (2021-05-28)
+
+
+### Bug Fixes
+
+* 修复文档错误 ([7fdbedc](https://github.com/xmy6364/storage/commit/7fdbedc695ae660a437fcb72dd2d197c277e1ef2))
+
 # 1.0.0 (2021-05-28)
 
 
