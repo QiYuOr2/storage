@@ -2,20 +2,14 @@
 
 目前实现了 localStorage、sessionStorage、Cookie、indexedDB 的封装
 
-## 体验 Demo
-
-```bash
-npm install
-
-npm run build
-
-npm run dev
-```
-
 ## 使用
 
+```
+npm i easystorage
+```
+
 ```javascript
-import { local, cookie, session, memory, indexed } from '../dist/index.esm';
+import { local, cookie, session, memory, indexed } from 'easystorage';
 
 // localStorage
 local.set('key', value);
@@ -45,7 +39,21 @@ await indexed.get('key');
 </script>
 ```
 
+## 体验 Demo
+
+```bash
+git clone https://github.com/xmy6364/storage.git
+
+cd storage
+
+npm install
+
+npm run build
+
+npm run dev
+```
+
 ## TODO
 
 - [x] 封装 indexDB
-- [ ] Github Action 自动发布 npm
+- [x] Github Action 自动发布 npm
