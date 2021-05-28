@@ -5,7 +5,7 @@
 ## 使用
 
 ```
-npm i easystorage
+npm i symstorage
 ```
 
 ```javascript
