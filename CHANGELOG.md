@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/xmy6364/storage/compare/v1.0.2...v1.0.3) (2021-06-06)
+
+
+### Bug Fixes
+
+* 减小发布体积 ([88a14e1](https://github.com/xmy6364/storage/commit/88a14e1c96afc49e1667406d7534e1423d105382))
+
 ## [1.0.2](https://github.com/xmy6364/storage/compare/v1.0.1...v1.0.2) (2021-06-04)
 
 
