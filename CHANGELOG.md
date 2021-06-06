@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/xmy6364/storage/compare/v1.0.1...v1.0.2) (2021-06-04)
+
+
+### Bug Fixes
+
+* 忘了打包 ([ec9a86c](https://github.com/xmy6364/storage/commit/ec9a86ceb3f8ed7e222e0772ee4e2b52f66eb7c8))
+
 ## [1.0.1](https://github.com/xmy6364/storage/compare/v1.0.0...v1.0.1) (2021-05-28)
 
 
